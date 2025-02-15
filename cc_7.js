@@ -11,10 +11,10 @@
 
  // Task 2 - Employee Hourly Wage Calculation //
 
- let calculateHourlyWage = function(salary, hoursPerWeek) {
-   let hourlyWage = salary / (hoursPerWeek * 52);
-   return hourlyWage.toFixed(2);
+ let calculateHourlyWage = function(salary, hoursPerWeek) { // starting the function expression
+   let hourlyWage = salary / (hoursPerWeek * 52); // declaring the equation that will be used
+   return hourlyWage.toFixed(2); // setting the return to two decimal places
  };
 
- console.log(`Employee Hourly Wage: $${calculateHourlyWage(52000, 40)}`);
- console.log(`Employee Hourly Wage: $${calculateHourlyWage(75000, 35)}`);
+ console.log(`Employee Hourly Wage: $${calculateHourlyWage(52000, 40)}`); // logging the calculation with given values
+ console.log(`Employee Hourly Wage: $${calculateHourlyWage(75000, 35)}`); // logging the calculation with given values
