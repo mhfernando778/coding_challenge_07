@@ -51,3 +51,14 @@
 
  console.log(`USA Shipping Cost: $${calculateShippingCost(10, "USA", true)}`); // logging the calculated shipping costs
  console.log(`Canada Shipping Cost: $${calculateShippingCost(5, "Canada", false)}`); // logging the calculated shipping costs
+
+
+ // Task 5 - Business Loan Interest Calculation //
+
+ function calculateLoanInterest(principal, rate, years) {
+   let interest = principal * rate * years;
+   return interest.toFixed(2);
+ }
+
+ console.log(`Total Interest: $${calculateLoanInterest(1000, .05, 3)}`);
+ console.log(`Total Interest: $${calculateLoanInterest(5000, .07, 5)}`);
