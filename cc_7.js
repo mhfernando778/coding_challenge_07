@@ -18,3 +18,15 @@
 
  console.log(`Employee Hourly Wage: $${calculateHourlyWage(52000, 40)}`); // logging the calculation with given values
  console.log(`Employee Hourly Wage: $${calculateHourlyWage(75000, 35)}`); // logging the calculation with given values
+
+
+ // Task 3 - Customer Loyalty Discount // 
+
+ const calculateLoyaltyDiscount = (amount, years) => {
+   const rate = years >= 5 ? 0.15: years >= 3 ? 0.10: 0.05;
+   let discount = amount * (1 - rate);
+   return discount.toFixed(2);
+};
+
+ console.log(`Calculated Discount: $${calculateLoyaltyDiscount(100, 6)}`);
+ console.log(`Calculated Discount: $${calculateLoyaltyDiscount(200, 2)}`);
