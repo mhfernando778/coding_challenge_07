@@ -62,3 +62,15 @@
 
  console.log(`Total Interest: $${calculateLoanInterest(1000, .05, 3)}`); // logging the calculation with the given values
  console.log(`Total Interest: $${calculateLoanInterest(5000, .07, 5)}`); // logging the calculation with the given values
+
+
+ // Task 6 - Filtering High-Value Transactions //
+
+ let transactions = [500, 1200, 3000, 800, 2200];
+ 
+ function filterHighValueTransactions(transactions, filterFunction) {
+   return transactions.filter(filterFunction);
+ }
+ let highValueTransactions = filterHighValueTransactions(transactions, transaction => transaction > 1000);
+ 
+ console.log(`High-Value Transactions: ${highValueTransactions}`);
