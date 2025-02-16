@@ -78,14 +78,14 @@
 
  // Task 7 - Budget Tracker //
 
- function createBudgetTracker() {
-   let balance = 0;
+ function createBudgetTracker() { // starting a function 
+   let balance = 0; // having a starting balance of zero
    return function(expense) {
       balance -= expense;
       return `$${balance}`;
    };
  }
- let budget = createBudgetTracker();
+ let budget = createBudgetTracker(); // calling the function
 
- console.log(`Current Balance: ${budget(300)}`);
- console.log(`Current Balance: ${budget(200)}`);
+ console.log(`Current Balance: ${budget(300)}`); // logging with given value
+ console.log(`Current Balance: ${budget(200)}`); // logging with given value
