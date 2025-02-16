@@ -74,4 +74,18 @@
  let highValueTransactions = filterHighValueTransactions(transactions, transaction => transaction > 1000);
 
  console.log(`High-Value Transactions: ${highValueTransactions}`); // logging the the filtered values
- 
+
+
+ // Task 7 - Budget Tracker //
+
+ function createBudgetTracker() {
+   let balance = 0;
+   return function(expense) {
+      balance -= expense;
+      return `$${balance}`;
+   };
+ }
+ let budget = createBudgetTracker();
+
+ console.log(`Current Balance: ${budget(300)}`);
+ console.log(`Current Balance: ${budget(200)}`);
