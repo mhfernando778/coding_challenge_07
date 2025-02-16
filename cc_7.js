@@ -55,10 +55,10 @@
 
  // Task 5 - Business Loan Interest Calculation //
 
- function calculateLoanInterest(principal, rate, years) {
-   let interest = principal * rate * years;
-   return interest.toFixed(2);
+ function calculateLoanInterest(principal, rate, years) { // starting a function to calculater interest
+   let interest = principal * rate * years; // declaring the equation being used
+   return interest.toFixed(2); // setting the return to two decimal places
  }
 
- console.log(`Total Interest: $${calculateLoanInterest(1000, .05, 3)}`);
- console.log(`Total Interest: $${calculateLoanInterest(5000, .07, 5)}`);
+ console.log(`Total Interest: $${calculateLoanInterest(1000, .05, 3)}`); // logging the calculation with the given values
+ console.log(`Total Interest: $${calculateLoanInterest(5000, .07, 5)}`); // logging the calculation with the given values
