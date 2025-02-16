@@ -66,11 +66,12 @@
 
  // Task 6 - Filtering High-Value Transactions //
 
- let transactions = [500, 1200, 3000, 800, 2200];
+ let transactions = [500, 1200, 3000, 800, 2200]; // declaring an array 
  
- function filterHighValueTransactions(transactions, filterFunction) {
+ function filterHighValueTransactions(transactions, filterFunction) { // starting a function
    return transactions.filter(filterFunction);
  }
  let highValueTransactions = filterHighValueTransactions(transactions, transaction => transaction > 1000);
+
+ console.log(`High-Value Transactions: ${highValueTransactions}`); // logging the the filtered values
  
- console.log(`High-Value Transactions: ${highValueTransactions}`);
