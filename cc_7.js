@@ -30,4 +30,24 @@
 
  console.log(`Calculated Discount: $${calculateLoyaltyDiscount(100, 6)}`); // logging the calculausing the given values
  console.log(`Calculated Discount: $${calculateLoyaltyDiscount(200, 2)}`); // logging the calculausing the given values
- 
+
+
+ // Task 4 - Product Shipping Cost Calculation //
+ function calculateShippingCost(weight, location, expedited = false) {
+   let cost;
+
+    if (location === "USA") {
+        cost = 5 + (.5 * weight);
+    } else if (location === "Canada") {
+        cost = 10 + (.7 * weight);
+    }
+
+    if (expedited) {
+        cost += 10;
+    }
+
+    return cost.toFixed(2);
+ };
+
+ console.log(`USA Shipping Cost: $${calculateShippingCost(10, "USA", true)}`);
+ console.log(`Canada Shipping Cost: $${calculateShippingCost(5, "Canada", false)}`);
