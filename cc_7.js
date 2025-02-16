@@ -33,7 +33,7 @@
 
 
  // Task 4 - Product Shipping Cost Calculation //
- function calculateShippingCost(weight, location, expedited = false) {
+ function calculateShippingCost(weight, location, expedited = false) { // writing a fucntion to calculate shipping costs
    let cost;
 
     if (location === "USA") {
@@ -49,5 +49,5 @@
     return cost.toFixed(2);
  };
 
- console.log(`USA Shipping Cost: $${calculateShippingCost(10, "USA", true)}`);
- console.log(`Canada Shipping Cost: $${calculateShippingCost(5, "Canada", false)}`);
+ console.log(`USA Shipping Cost: $${calculateShippingCost(10, "USA", true)}`); // logging the calculated shipping costs
+ console.log(`Canada Shipping Cost: $${calculateShippingCost(5, "Canada", false)}`); // logging the calculated shipping costs
