@@ -22,11 +22,12 @@
 
  // Task 3 - Customer Loyalty Discount // 
 
- const calculateLoyaltyDiscount = (amount, years) => {
-   const rate = years >= 5 ? 0.15: years >= 3 ? 0.10: 0.05;
-   let discount = amount * (1 - rate);
-   return discount.toFixed(2);
+ const calculateLoyaltyDiscount = (amount, years) => { // starting an arrow function to calcualte loyalty discount
+   const rate = years >= 5 ? 0.15: years >= 3 ? 0.10: 0.05; // setting the parameters
+   let discount = amount * (1 - rate); // delcaring the equation being used
+   return discount.toFixed(2); // setting the return to two decimal places
 };
 
- console.log(`Calculated Discount: $${calculateLoyaltyDiscount(100, 6)}`);
- console.log(`Calculated Discount: $${calculateLoyaltyDiscount(200, 2)}`);
+ console.log(`Calculated Discount: $${calculateLoyaltyDiscount(100, 6)}`); // logging the calculausing the given values
+ console.log(`Calculated Discount: $${calculateLoyaltyDiscount(200, 2)}`); // logging the calculausing the given values
+ 
